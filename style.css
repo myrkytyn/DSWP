@@ -1,0 +1,33 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #DED5BC;
+}
+
+li {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+li a {
+    display: block;
+    color: #7D6F55;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #cfc29d;
+}
+
+.image-nav {
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 80px;
+}
