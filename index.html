@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Дім Сірка. Офіційний сайт організації</title>
     <meta name="description" content="Дім Сірка. Офіційний сайт організації">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <!-- Disable zoom-->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +14,17 @@
 </head>
 
 <body>
-    <ul>
-        <li><img src="img/site/logo.png" class="image-nav" href="#home"></li>
-        <li><a href="#home">Про нас</a></li>
-        <li><a href="#news">Новини</a></li>
-        <li><a href="#contact">Допомогти</a></li>
-        <li><a href="#about">Контакти</a></li>
-    </ul>
+    <nav class="navbar">
+        <a href="#home" class="logo">
+            <img src="img/site/logo.png" alt="Dim Sirka logo">
+        </a>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="#home">Про нас</a></li>
+            <li class="nav-item"><a href="#news">Новини</a></li>
+            <li class="nav-item"><a href="#contact">Допомогти</a></li>
+            <li class="nav-item"><a href="#about">Контакти</a></li>
+        </ul>
+    </nav>
 </body>
 
 </html>
