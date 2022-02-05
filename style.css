@@ -12,25 +12,25 @@ html {
 
 body {}
 
-nav {
-    width: 100%;
+.navbar {
     background-color: #DED5BC;
     display: flex;
     padding-left: 30px;
     padding-right: 10px;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 .nav-links {
-    list-style: none;
     display: flex;
+    list-style: none;
+    justify-content: space-around;
 }
 
 .nav-item a {
     display: inline-block;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
     font-size: 24px;
     color: #7D6F55;
     padding: 14px 16px;
@@ -39,7 +39,22 @@ nav {
     margin-bottom: 10px;
 }
 
+.nav-item-help a {
+    display: inline-block;
+    font-size: 24px;
+    color: #7D6F55;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
 .nav-item:hover {
+    background-color: #cfc29d;
+}
+
+.nav-item-help:hover {
     background-color: #cfc29d;
 }
 
@@ -48,8 +63,19 @@ nav {
 }
 
 .logo img {
-    width: 80px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 200px;
+    padding: 10px;
+    margin: -35% 0 0 50%;
     vertical-align: middle;
+    background-color: #DED5BC;
+}
+
+.pets {
+    display: block;
+    background-color: #F2F0E6;
+    margin-top: -6%;
+}
+
+.pets h2 {
+    display: block;
 }
