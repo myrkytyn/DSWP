@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <title>Дім Сірка. Офіційний сайт організації</title>
     <meta name="description" content="Дім Сірка. Офіційний сайт організації">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <!-- Disable zoom-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +14,22 @@
 
 <body>
     <nav class="navbar">
-        <a href="#home" class="logo">
-            <img src="img/site/logo.png" alt="Dim Sirka logo">
-        </a>
+        <div class="logo">
+            <img src="img/site/dim sirka.svg" alt="">
+        </div>
         <ul class="nav-links">
-            <li class="nav-item"><a href="#home">Про нас</a></li>
+            <li class="nav-item"><a href="#about">Про нас</a></li>
             <li class="nav-item"><a href="#news">Новини</a></li>
-            <li class="nav-item"><a href="#contact">Допомогти</a></li>
-            <li class="nav-item"><a href="#about">Контакти</a></li>
+            <li class="nav-item"><a href="#contact">Контакти</a></li>
+            <li class="nav-item nav-item-help"><img class="heart" src="img/site/heart.svg"><a href="#help">Допомогти</a></li>
         </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
     </nav>
+    <script src="/app.js"></script>
 </body>
 
 </html>
