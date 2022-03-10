@@ -29,10 +29,32 @@
             <div class="line3"></div>
         </div>
     </nav>
+    <div class="wrapper">
+        <div class="donate">
+            <p class="help">Допоможіть нам діяти</p>
+            <p class="p-friends">Ваша підтримка дуже потрібна для хвостатих друзів</p>
+            <script type="text/javascript" id="widget-wfp-script" src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script>
+            <script type="text/javascript">
+                function runWfpWdgt(url) {
+                    var wayforpay = new Wayforpay();
+                    wayforpay.invoice(url);
+                }
+            </script>
+            <div class="paws">
+                <img src="img/site/paws.svg" alt="paws">
+            </div>
+
+            <button type="button" onclick="runWfpWdgt('https://secure.wayforpay.com/button/b70d172a5464c');" style=>Допомогти</span></button>
+        </div>
+    </div>
     <div class="footer"><a>Ми у соцмережах:</a>
         <div class="social">
-            <img src="img/site/FB.png" alt="">
-            <img src="img/site/Instagram.png" alt="">
+            <a href="https://www.facebook.com/dimsirka/" target="_blank" rel="noopener noreferrer">
+                <img src="img/site/FB.png" alt="">
+            </a>
+            <a href="https://www.instagram.com/dim__sirka/" target="_blank" rel="noopener noreferrer">
+                <img src="img/site/Instagram.png" alt="інстаграм дім сірка">
+            </a>
         </div>
     </div>
     <script src="app.js"></script>
