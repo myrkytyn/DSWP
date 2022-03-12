@@ -159,10 +159,9 @@ body {
 .switch {
     display: flex;
     align-items: center;
+    padding: 6px 24px;
     justify-content: center;
     background: #9CCD62;
-    width: 180px;
-    height: 40px;
     border-radius: 14px;
     text-align: center;
     font-size: 24px;
@@ -219,6 +218,9 @@ body {
     }
     .p-friends {
         font-size: 15px;
+    }
+    .switch {
+        font-size: 18px;
     }
 }
 
