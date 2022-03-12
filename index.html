@@ -21,7 +21,7 @@
             <li class="nav-item"><a href="#about">Про нас</a></li>
             <li class="nav-item"><a href="#news">Новини</a></li>
             <li class="nav-item"><a href="#contact">Контакти</a></li>
-            <li class="nav-item nav-item-help"><img class="heart" src="img/site/heart.svg"><a href="#help">Допомогти</a></li>
+            <li class="nav-item nav-item-help"><img class="heart" src="img/site/heart.svg"><a href="help.html">Допомогти</a></li>
         </ul>
         <div class="burger">
             <div class="line1"></div>
@@ -31,7 +31,7 @@
     </nav>
     <div class="wrapper">
         <div class="donate">
-            <p class="help">Допоможіть нам діяти</p>
+            <p class="p-help">Допоможіть нам діяти</p>
             <p class="p-friends">Ваша підтримка дуже потрібна для хвостатих друзів</p>
             <script type="text/javascript" id="widget-wfp-script" src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script>
             <script type="text/javascript">
@@ -40,10 +40,11 @@
                     wayforpay.invoice(url);
                 }
             </script>
-            <div class="paws">
-                <img src="img/site/paws.svg" alt="paws">
+            <div class="switcher">
+                <div class="onetime switch">Один раз</div>
+                <div class="subscription switch">Щомісяця</div>
             </div>
-
+            <input type="text" class="amount" name="custom_amount" id="custom_amount" placeholder="Ваша сума" minlength="2" maxlength="9" pattern="^[1-9][0-9]*">
             <button type="button" onclick="runWfpWdgt('https://secure.wayforpay.com/button/b70d172a5464c');" style=>Допомогти</span></button>
         </div>
     </div>
