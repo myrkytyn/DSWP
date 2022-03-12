@@ -134,8 +134,9 @@ body {
     color: #3A3C42;
     background-color: #E9E9E9;
     margin-top: 50px;
-    width: 90%;
     border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .p-help {
