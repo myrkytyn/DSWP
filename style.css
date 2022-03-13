@@ -167,7 +167,7 @@ body {
     align-items: center;
     padding: 6px 24px;
     justify-content: center;
-    background: #9CCD62;
+    background: #b7b7b7;
     border-radius: 14px;
     text-align: center;
     font-size: 24px;
@@ -177,6 +177,14 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
+    border-color: #b7b7b7;
+    border-style: solid;
+}
+
+.switch-active {
+    background: white;
+    border-style: solid;
+    border-color: #9CCD62;
 }
 
 .amount {

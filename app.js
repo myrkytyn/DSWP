@@ -20,3 +20,24 @@ const navSlide = () => {
 }
 
 navSlide();
+
+const switchPayment = () => {
+    const oneTime = document.querySelector('.onetime')
+    const subscription = document.querySelector('.subscription')
+    const helpbtn = document.querySelector('.helpbtn')
+
+    oneTime.addEventListener('click', () => {
+        oneTime.classList.toggle('switch-active');
+        subscription.classList.remove('switch-active');
+        helpbtn.setAttribute("onClick", "runWfpWdgt('https://secure.wayforpay.com/button/b70d172a5464c');")
+    });
+    subscription.addEventListener('click', () => {
+        subscription.classList.toggle('switch-active');
+        oneTime.classList.remove('switch-active');
+        helpbtn.setAttribute("onClick", "runWfpWdgt('https://secure.wayforpay.com/button/bab7f92f827f6');")
+    });
+
+
+}
+
+switchPayment();
