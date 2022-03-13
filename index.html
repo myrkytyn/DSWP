@@ -34,19 +34,14 @@
         <div class="donate">
             <p class="p-help">Допоможіть нам діяти</p>
             <p class="p-friends">Ваша підтримка дуже потрібна для хвостатих друзів</p>
-            <script type="text/javascript" id="widget-wfp-script" src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script>
-            <script type="text/javascript">
-                function runWfpWdgt(url) {
-                    var wayforpay = new Wayforpay();
-                    wayforpay.invoice(url);
-                }
-            </script>
             <div class="switcher">
                 <div class="onetime switch">Один раз</div>
                 <div class="subscription switch">Щомісяця</div>
             </div>
-            <input type="text" class="amount" name="custom_amount" id="custom_amount" placeholder="Ваша сума" minlength="2" maxlength="9" pattern="^[1-9][0-9]*">
-            <button type="button" class="helpbtn" onclick="runWfpWdgt('https://secure.wayforpay.com/button/b70d172a5464c');">Допомогти</span></button>
+            <form>
+                <input type="text" class="amount" name="custom_amount" id="custom_amount" placeholder="Введіть суму" min="1" step="1" minlength="2" maxlength="9" pattern="^[1-9][0-9]*" />
+                <button type="button" class="helpbtn" onclick="runWfpWdgt('https://secure.wayforpay.com/button/b70d172a5464c', this.form.custom_amount.value);">Допомогти</button>
+            </form>
         </div>
     </div>
     <div class="footer"><a>Ми у соцмережах:</a>
@@ -60,6 +55,8 @@
         </div>
     </div>
     <script src="app.js"></script>
+    <script type="text/javascript" id="widget-wfp-script" src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script>
+    <script src="wayforpay.js"></script>
 </body>
 
 </html>
