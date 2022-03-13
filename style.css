@@ -162,6 +162,7 @@ body {
 }
 
 .switch {
+    white-space: nowrap;
     display: flex;
     align-items: center;
     padding: 6px 24px;
