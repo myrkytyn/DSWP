@@ -29,12 +29,12 @@ const switchPayment = () => {
     oneTime.addEventListener('click', () => {
         oneTime.classList.toggle('switch-active');
         subscription.classList.remove('switch-active');
-        helpbtn.setAttribute("onClick", "runWfpWdgt('https://secure.wayforpay.com/button/b70d172a5464c');")
+        helpbtn.setAttribute("onClick", "pay(this.form.custom_amount.value);")
     });
     subscription.addEventListener('click', () => {
         subscription.classList.toggle('switch-active');
         oneTime.classList.remove('switch-active');
-        helpbtn.setAttribute("onClick", "runWfpWdgt('https://secure.wayforpay.com/button/bab7f92f827f6');")
+        helpbtn.setAttribute("onClick", "subscription(this.form.custom_amount.value);")
     });
 
 
