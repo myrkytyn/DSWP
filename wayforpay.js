@@ -1,25 +1,27 @@
-function runWfpWdgt(url, amount) {
+/* function runWfpWdgt(url, amount) {
     var wayforpay = new Wayforpay();
     wayforpay.invoice(url, true);
-}
+} */
+//fe22ced72fb466ccc54c55d96f99aac482137b3f
 
-/* var pay = function() {
+var wayforpay = new Wayforpay();
+var pay = function(amount) {
+    var date = Date.now();
+    const key = "fe22ced72fb466ccc54c55d96f99aac482137b3f"
+    const auth = "dogmania_wayforpay_shop;www.dimsirka.if.ua;" + date + ";" + date + ";" + amount + ";UAH;Допомога Дому Сірка;1;" + amount;
+    var hash = Crypto.HMAC(Crypto.MD5, auth, key);
     wayforpay.run({
         merchantAccount: "dogmania_wayforpay_shop",
-        merchantDomainName: "www.dogmania.com.ua",
+        merchantDomainName: "www.dimsirka.if.ua",
         authorizationType: "SimpleSignature",
-        merchantSignature: "b95932786cbe243a76b014846b63fe92",
-        orderReference: "DH783023",
-        orderDate: "1415379863",
-        amount: "1547.36",
+        orderReference: date,
+        orderDate: date,
+        amount: amount,
         currency: "UAH",
-        productName: "Процессор Intel Core i5-4670 3.4GHz",
-        productPrice: "1000",
+        productName: "Допомога Дому Сірка",
+        productPrice: amount,
         productCount: "1",
-        clientFirstName: "Вася",
-        clientLastName: "Васечкин",
-        clientEmail: "some@mail.com",
-        clientPhone: "380631234567",
-        language: "UA"
+        merchantSignature: hash,
+        straightWidget: true
     });
-} */
+}
