@@ -6,7 +6,10 @@
     <title>Дім Сірка. Офіційний сайт організації</title>
     <meta name="description" content="Дім Сірка. Офіційний сайт організації">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="img/site/favicon.ico">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest"> -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +17,7 @@
 </head>
 
 <body>
+    <!-- Menu (navigation bar)-->
     <nav class="navbar">
         <div class="logo">
             <img src="img/site/dim sirka.svg" alt="">
@@ -30,20 +34,30 @@
             <div class="line3"></div>
         </div>
     </nav>
+
+    <!-- Main image -->
+    <div class="image-block">
+        <img src="Others/image.jpeg" alt="">
+        <span></span>
+    </div>
+
+    <!-- Donate block -->
     <div class="wrapper">
         <div class="donate">
             <p class="p-help">Допоможіть нам діяти</p>
-            <p class="p-friends">Ваша підтримка дуже потрібна для хвостатих друзів</p>
+            <p class="p-friends">Так само легко, як замовити чашку кави</p>
             <div class="switcher">
                 <div class="onetime switch">Один раз</div>
                 <div class="subscription switch">Щомісяця</div>
             </div>
-            <form>
-                <input type="text" class="amount" name="custom_amount" autocomplete="off" id="custom_amount" placeholder="Введіть суму" min="1" step="1" minlength="2" maxlength="9" pattern="^[1-9][0-9]*" />
-                <button type="button" class="helpbtn" onclick="pay(this.form.custom_amount.value);">Допомогти</button>
+            <div class="error"></div>
+            <form class="form">
+                <input type="text" class="amount" name="custom_amount" autocomplete="off" id="custom_amount" placeholder="Введіть суму" />
+                <button type="button" class="helpbtn">Допомогти</button>
             </form>
         </div>
     </div>
+    <!-- Footer (social links) -->
     <div class="footer"><a>Ми у соцмережах:</a>
         <div class="social">
             <a href="https://www.facebook.com/dimsirka/" target="_blank" rel="noopener noreferrer">
