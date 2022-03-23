@@ -277,12 +277,15 @@ body {
     body {
         overflow-x: hidden;
     }
+    .nav-item{
+        padding: 5px;
+    }
     .nav-item a{
         font-size: 14px;
     }
     .nav-item-help{
         padding: 5px;
-        margin-left: 2px;
+        margin-left: 10px;
         margin-right: 5px;
     }
     .nav-item-help img{
