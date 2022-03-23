@@ -20,6 +20,7 @@ body {
     flex-direction: column;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
+    overflow-x: hidden;
 }
 
 
@@ -127,10 +128,6 @@ body {
     position: relative;
     width: 100%;
     overflow-y: hidden;
-    /* fallback for old browsers */
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     background-position: 50% 0;
 }
