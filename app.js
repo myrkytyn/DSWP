@@ -1,4 +1,37 @@
 let subscr = false;
+
+window.onscroll = function() { stickyNavBar() };
+
+var navbar = document.querySelector(".navbar");
+var logo = document.querySelector(".logo");
+
+function stickyNavBar() {
+    if (window.pageYOffset >= 0) {
+        navbar.classList.add("sticky");
+        logo.classList.add("sticky-logo");
+    } else {
+        navbar.classList.remove("sticky");
+        logo.classList.remove("sticky-logo");
+    }
+}
+
+const collapse = () => {
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+}
+
 const helpButton = () => {
     const button = document.querySelector('.helpbtn');
     const errorElement = document.querySelector('.error');
@@ -55,3 +88,4 @@ const switchPayment = () => {
 
 switchPayment();
 helpButton();
+collapse();
