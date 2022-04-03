@@ -1,6 +1,7 @@
 html {
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -11,10 +12,6 @@ html {
     padding: 0;
 }
 
-*::selection {
-    background-color: none;
-}
-
 body {
     display: flex;
     min-height: 100vh;
@@ -22,6 +19,12 @@ body {
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     overflow-x: hidden;
+    color: #3A3C42;
+}
+
+p {
+    margin-top: 2px;
+    margin-bottom: 2px;
 }
 
 
@@ -83,20 +86,17 @@ body {
 .logo {
     display: flex;
     justify-content: flex-start;
-    padding: 20px;
+    padding: 5px;
 }
 
 
 /* Sticky navbar */
+
 .sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
-.sticky-logo{
-    padding:5px;
-}
-
 
 
 /* Footer styles */
@@ -124,7 +124,8 @@ body {
     padding-right: 5px;
     cursor: pointer;
 }
-.image-block{
+
+.image-block {
     display: flex;
 }
 
@@ -135,13 +136,44 @@ body {
 }
 
 
+/* About us */
+
+.about {
+    display: flex;
+    padding-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.about-p {
+    text-align: justify;
+}
+
+.images-about img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 14px;
+}
+
+.images-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* Donate block styles */
 
 .wrapper {
+    margin-top: 10px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(245, 245, 245);
 }
 
 .donate {
@@ -150,13 +182,19 @@ body {
     align-items: center;
     justify-content: center;
     color: #3A3C42;
-    background-color: #E9E9E9;
-    margin-top: 50px;
-    border-radius: 20px;
+    /*     background-color: #E9E9E9; */
+    border: #3A3C42;
+    /*     border-style: solid; */
+    border-width: 2px;
+    border-radius: 14px;
     padding-left: 20px;
     padding-right: 20px;
     margin-right: 20px;
     margin-left: 20px;
+}
+
+.donate>*::selection {
+    background-color: none;
 }
 
 .p-help {
@@ -185,7 +223,7 @@ body {
     align-items: center;
     padding: 6px 24px;
     justify-content: center;
-    background: #b7b7b7;
+    background: rgb(245, 245, 245);
     border-radius: 14px;
     text-align: center;
     font-size: 24px;
@@ -195,14 +233,16 @@ body {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    border-color: #b7b7b7;
+    border-color: rgb(230, 230, 230);
     border-style: solid;
 }
 
-.switch-active {
+.switch-active,
+.switch:hover {
     background: white;
     border-style: solid;
     border-color: #9CCD62;
+    transition: 300ms ease-in-out;
 }
 
 .amount {
@@ -232,7 +272,7 @@ body {
     border: none;
     border-radius: 14px;
     padding: 18px;
-    box-shadow: 3px 2px 8px rgba(71, 66, 66, 0.22);
+    /* box-shadow: 3px 2px 8px rgba(71, 66, 66, 0.22); */
     text-align: center;
     outline: none;
     font-weight: bold;
@@ -241,6 +281,11 @@ body {
     line-height: 18px;
     cursor: pointer;
     margin-bottom: 20px;
+    transition: transform 500ms ease-in-out;
+}
+
+.helpbtn:hover {
+    transform: scale(1.1);
 }
 
 .error {
@@ -253,60 +298,69 @@ body {
 }
 
 
+/* Collapsible content */
+
+.before-collapse {
+    margin-top: 20px;
+    height: 2px;
+    background-color: #3A3C42;
+}
+
+.after-collapse {
+    height: 2px;
+    background-color: #3A3C42;
+}
+
+.collapsible {
+    background-color: white;
+    color: #3A3C42;
+    cursor: pointer;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.active,
+.collapsible:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+.collapsible:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+
 /* Instagram Feed*/
 
-.instagram-feed{
+.instagram-feed {
     margin-top: 30px;
     display: none;
     align-items: center;
     justify-content: center;
 }
-
- /* Collapsible content */
- .collapsible {
-    background-color: #777;
-    color: white;
-    cursor: pointer;
-    margin-top: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 20px;
-    margin-right: 20px;
-    margin-left: 20px;
-    border: none;
-    border-radius: 12px;
-    text-align: left;
-    outline: none;
-    font-size: 24px;
-  }
-  
-  .active, .collapsible:hover {
-    background-color: #555;
-  }
-  
-  .collapsible:after {
-    content: '\002B';
-    color: white;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: "\2212";
-  }
-  
-  .content {
-    padding: 0 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #f1f1f1;
-    margin-right: 30px;
-    margin-left: 30px;
-  }
-
 
 
 /* Responsive design for mobile phones */
@@ -329,23 +383,22 @@ body {
     }
 }
 
-
 @media (max-width:500px) {
     body {
         overflow-x: hidden;
     }
-    .nav-item{
+    .nav-item {
         padding: 5px;
     }
-    .nav-item a{
+    .nav-item a {
         font-size: 14px;
     }
-    .nav-item-help{
+    .nav-item-help {
         padding: 5px;
         margin-left: 10px;
         margin-right: 5px;
     }
-    .nav-item-help img{
+    .nav-item-help img {
         display: none;
     }
     .logo {
@@ -373,5 +426,30 @@ body {
     .error {
         width: 400px;
     }
+    .collapsible {
+        margin-right: 10px;
+        margin-left: 10px;
+        font-size: 18px;
+    }
+    .donate {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .about {
+        display: block;
+        margin: 0 10px 10px 10px;
+        padding-top: 10px;
+    }
+    .images-about img {
+        width: 150px;
+        height: 150px;
+    }
+    .about p {
+        font-size: 15px;
+    }
+    .ab-2 {
+        display: none;
+    }
 }
-

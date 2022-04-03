@@ -5,7 +5,7 @@ window.onscroll = function() { stickyNavBar() };
 var navbar = document.querySelector(".navbar");
 var logo = document.querySelector(".logo");
 
-function stickyNavBar() {
+/* function stickyNavBar() {
     if (window.pageYOffset >= 0) {
         navbar.classList.add("sticky");
         logo.classList.add("sticky-logo");
@@ -13,7 +13,7 @@ function stickyNavBar() {
         navbar.classList.remove("sticky");
         logo.classList.remove("sticky-logo");
     }
-}
+} */
 
 const collapse = () => {
     var coll = document.getElementsByClassName("collapsible");
