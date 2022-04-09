@@ -367,9 +367,9 @@ p {
 
 .gallery {
     display: block;
-    margin-top: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .splide__slide img {
@@ -467,5 +467,10 @@ p {
     }
     .ab-2 {
         display: none;
+    }
+    .gallery {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 5px;
     }
 }
