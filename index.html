@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scripts/splide-4.0.1/dist/css/splide.min.css">
+    <link rel="stylesheet" href="scripts/splide-4.0.1/dist/css/themes/splide-sea-green.min.css">
 </head>
 
 <body>
@@ -26,7 +28,7 @@
         </div>
         <ul class="nav-links">
             <li class="nav-item"><a href="#about">Про нас</a></li>
-            <li class="nav-item"><a href="#contact">Контакти</a></li>
+            <li class="nav-item"><a href="#gallery">Галерея</a></li>
             <li class="nav-item nav-item-help"><img class="heart" src="img/site/heart.svg"><a href="#donate">Допомогти</a></li>
         </ul>
     </nav>
@@ -86,6 +88,25 @@
         <p>ЄДРПОУ 37952464</p>
     </div>
     <div class="after-collapse"></div>
+
+    <!-- Splide Gallery -->
+    <div class="gallery" id="gallery">
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="img/site/gallery/1.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="img/site/gallery/2.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="img/site/gallery/3.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="img/site/gallery/4.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="img/site/gallery/5.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="img/site/gallery/6.jpg" alt=""></li>
+                    <li class="splide__slide"><img src="img/site/gallery/7.jpeg" alt=""></li>
+                    <li class="splide__slide"><img src="img/site/gallery/8.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
     <!-- News (Instagram feed) -->
     <div class="instagram-feed">
         <div style="position:relative;max-width:400px;min-width:100px;">
@@ -150,9 +171,19 @@
     <script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/crypto-js/2.2.0-crypto-md5.js"></script>
     <script src="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/crypto-js/2.2.0-hmac-min.js"></script>
     <script src="wayforpay.js"></script>
-
-
-
+    <script src="scripts/splide-4.0.1/dist/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide('.splide', {
+            type: 'loop',
+            perPage: 3,
+            perMove: 1,
+            height: '20rem',
+            autoWidth: true,
+            gap: '2em',
+            focus: 'center'
+        });
+        splide.mount();
+    </script>
 
 </body>
 

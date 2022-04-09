@@ -86,6 +86,9 @@ const switchPayment = () => {
 
 }
 
+
+
+
 switchPayment();
 helpButton();
 collapse();
