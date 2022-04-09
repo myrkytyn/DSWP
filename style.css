@@ -443,9 +443,10 @@ p {
         width: 400px;
     }
     .collapsible {
-        margin-right: 10px;
-        margin-left: 10px;
         font-size: 18px;
+    }
+    .content p {
+        font-size: 16px;
     }
     .donate {
         margin-left: 10px;
