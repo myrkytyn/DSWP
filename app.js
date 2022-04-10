@@ -1,19 +1,6 @@
 let subscr = false;
-
-window.onscroll = function() { stickyNavBar() };
-
 var navbar = document.querySelector(".navbar");
 var logo = document.querySelector(".logo");
-
-/* function stickyNavBar() {
-    if (window.pageYOffset >= 0) {
-        navbar.classList.add("sticky");
-        logo.classList.add("sticky-logo");
-    } else {
-        navbar.classList.remove("sticky");
-        logo.classList.remove("sticky-logo");
-    }
-} */
 
 const collapse = () => {
     var coll = document.getElementsByClassName("collapsible");

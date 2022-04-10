@@ -49,16 +49,17 @@ p {
 
 .nav-item {
     padding: 10px;
+    transition: transform 500ms ease-in-out;
 }
 
 .nav-item a {
-    font-size: 24px;
+    font-size: 22px;
     color: #F7F8E2;
     text-decoration: none;
 }
 
-.nav-item-help a {
-    font-size: 24px;
+.donate-a {
+    font-size: 22px;
     color: #F7F8E2;
     text-decoration: none;
     font-weight: 600;
@@ -69,9 +70,18 @@ p {
     display: flex;
     background-color: #9CCD62;
     border-radius: 20px;
-    padding: 10px;
-    margin: 0 25px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin: 0 10px;
     align-items: center;
+}
+
+.nav-item-help:hover,
+.nav-item:hover,
+.logo:hover {
+    transform: scale(1.1);
 }
 
 .nav-item-help img {
@@ -80,22 +90,14 @@ p {
 }
 
 .logo img {
-    width: 100px;
+    width: 80px;
 }
 
 .logo {
     display: flex;
     justify-content: flex-start;
     padding: 5px;
-}
-
-
-/* Sticky navbar */
-
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
+    transition: transform 500ms ease-in-out;
 }
 
 
@@ -277,7 +279,7 @@ p {
     outline: none;
     font-weight: bold;
     font-size: 24px;
-    color: #3A3C42;
+    color: #F7F8E2;
     line-height: 18px;
     cursor: pointer;
     margin-bottom: 20px;
@@ -286,6 +288,11 @@ p {
 
 .helpbtn:hover {
     transform: scale(1.1);
+}
+
+.helpbtn img {
+    width: 30px;
+    margin-right: 10px;
 }
 
 .error {
@@ -376,6 +383,18 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.splide__arrow svg {
+    fill: #9CCD62 !important;
+}
+
+.splide__pagination__page.is-active {
+    background: #9CCD62 !important;
+}
+
+.splide__pagination__page:hover {
+    background-color: #9CCD62 !important;
 }
 
 

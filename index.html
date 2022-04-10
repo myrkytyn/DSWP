@@ -6,10 +6,15 @@
     <title>Дім Сірка. Офіційний сайт організації</title>
     <meta name="description" content="Дім Сірка. Офіційний сайт організації">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="img/favicon/site.webmanifest"> -->
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,20 +27,22 @@
     <!-- Menu (navigation bar)-->
     <nav class="navbar">
         <div class="logo">
-            <a href="#top">
+            <a href="https://dimsirka.if.ua">
                 <img src="img/site/dim sirka.svg" alt="">
             </a>
         </div>
         <ul class="nav-links">
             <li class="nav-item"><a href="#about">Про нас</a></li>
             <li class="nav-item"><a href="#gallery">Галерея</a></li>
-            <li class="nav-item nav-item-help"><img class="heart" src="img/site/heart.svg"><a href="#donate">Допомогти</a></li>
+            <a href="#donate" class="donate-a">
+                <li class="nav-item nav-item-help"><img class="heart" src="img/site/heart.svg">Допомогти</li>
+            </a>
         </ul>
     </nav>
 
     <!-- Main image -->
     <div class="image-block">
-        <img src="img/site/image.jpeg" alt="">
+        <img src="img/site/banner.jpeg" alt="">
     </div>
     <!-- About -->
     <div class="about" id="about">
@@ -69,7 +76,7 @@
             <div class="error"></div>
             <form class="form">
                 <input type="text" class="amount" name="custom_amount" autocomplete="off" id="custom_amount" placeholder="Введіть суму" />
-                <button type="button" class="helpbtn">Допомогти</button>
+                <button type="button" class="helpbtn"><img class="heart" src="img/site/paw.svg">Допомогти</button>
             </form>
         </div>
     </div>
@@ -158,10 +165,10 @@
     <!-- Footer (social links) -->
     <div class="footer"><a>Ми у соцмережах:</a>
         <div class="social">
-            <a href="https://www.facebook.com/dimsirka/" target="_blank" rel="noopener noreferrer">
+            <!--             <a href="https://www.facebook.com/dimsirka/" target="_blank" rel="noopener noreferrer">
                 <img src="img/site/FB.png" alt="">
-            </a>
-            <a href="instagram://user?username=dim__sirka">
+            </a> -->
+            <a href="https://www.instagram.com/dim__sirka/" target="_blank" rel="noopener noreferrer">
                 <img src="img/site/Instagram.png" alt="інстаграм дім сірка">
             </a>
         </div>
