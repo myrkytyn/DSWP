@@ -103,14 +103,12 @@ p {
 
 /* Banner */
 
-.image-block,
-.banner {
+.image-block {
     display: flex;
 }
 
 .banner,
 .banner img {
-    display: flex;
     position: relative;
     width: 100%;
 }
