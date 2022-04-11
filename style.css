@@ -532,6 +532,9 @@ p {
     .pc {
         display: none;
     }
+    .mobile {
+        display: block;
+    }
     .images-about img {
         width: 150px;
         height: 150px;
