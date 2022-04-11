@@ -236,7 +236,7 @@ p {
     align-items: center;
     padding: 6px 24px;
     justify-content: center;
-    background: rgb(245, 245, 245);
+    background: rgb(230, 230, 230);
     border-radius: 14px;
     text-align: center;
     font-size: 24px;
@@ -246,7 +246,7 @@ p {
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 10px;
-    border-color: rgb(230, 230, 230);
+    border-color: rgb(210, 210, 210);
     border-style: solid;
 }
 
