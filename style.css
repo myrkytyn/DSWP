@@ -129,6 +129,10 @@ p {
     display: none;
 }
 
+.pc {
+    display: flex;
+}
+
 
 /* About us */
 
@@ -529,11 +533,11 @@ p {
         margin: 0 10px 10px 10px;
         padding-top: 30px;
     }
+    .mobile {
+        display: flex;
+    }
     .pc {
         display: none;
-    }
-    .mobile {
-        display: block;
     }
     .images-about img {
         width: 150px;
