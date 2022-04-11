@@ -125,6 +125,10 @@ p {
     margin-left: 50px;
 }
 
+.mobile {
+    display: none;
+}
+
 
 /* About us */
 
@@ -524,6 +528,9 @@ p {
         display: block;
         margin: 0 10px 10px 10px;
         padding-top: 30px;
+    }
+    .pc {
+        display: none;
     }
     .images-about img {
         width: 150px;
