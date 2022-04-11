@@ -87,6 +87,7 @@ p {
 .nav-item-help img {
     width: 27px;
     height: 27px;
+    margin-right: 4px;
 }
 
 .logo img {
@@ -124,11 +125,11 @@ p {
 }
 
 .mobile {
-    display: none;
+    display: none !important;
 }
 
 .pc {
-    display: flex;
+    display: flex !important;
 }
 
 
@@ -151,6 +152,11 @@ p {
     margin-right: 50px;
 }
 
+.text-left p,
+.text-right p {
+    margin-top: 10px;
+}
+
 .right-ab,
 .left-ab {
     display: flex;
@@ -160,11 +166,9 @@ p {
 
 .images-about img {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 250px;
     margin-left: 5px;
     margin-right: 5px;
-    border-radius: 14px;
 }
 
 .images-about {
@@ -532,10 +536,10 @@ p {
         padding-top: 30px;
     }
     .mobile {
-        display: flex;
+        display: flex!important;
     }
     .pc {
-        display: none;
+        display: none!important;
     }
     .images-about img {
         width: 150px;
