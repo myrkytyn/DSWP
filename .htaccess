@@ -1,9 +1,8 @@
-ErrorDocument 404 https: //dimsirka.if.ua/
-ErrorDocument 403 https: //dimsirka.if.ua/
-ErrorDocument 500 https: //dimsirka.if.ua/
-Options - Indexes
+ErrorDocument 404 https://dimsirka.if.ua/
+ErrorDocument 403 https://dimsirka.if.ua/
+ErrorDocument 500 https://dimsirka.if.ua/
+Options -Indexes
 
-RewriteEngine On
-RewriteCond %{HTTPS} off
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule ^(.*)$ https://dimsirka.if.ua/ [L,R=301]
