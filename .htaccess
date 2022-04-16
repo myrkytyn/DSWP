@@ -1,0 +1,9 @@
+ErrorDocument 404 https://dimsirka.if.ua/
+ErrorDocument 403 https://dimsirka.if.ua/
+ErrorDocument 500 https://dimsirka.if.ua/
+Options -Indexes
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ hhttps://dimsirka.if.ua/$1 [R,L]
+
